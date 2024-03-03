@@ -2,66 +2,112 @@ body {
     background-color: rgb(202, 198, 193);
     margin: 0;
 }
-
-h1 {
-    margin: 0;
-}
-
+h1 {margin: 0;}
 a {
     text-decoration: none;
     color: #000;
 }
 
-
 .header {
     width: 70%;
-    padding: 20px;
+    padding: 10px;
     margin: 0 auto;
     background-color: lightcoral;
-    font-size: 30px;
     text-align: center;
 }
 
-.header_title {
+.header-title {
     font-family: 'Marck Script', cursive;
+    font-size: 60px;
 }
-.main_picture {
+.main-picture {
     border: 3px solid green;
+}
+
+@media(width <= 600px) {
+    .main-picture {
+        width: 80%;
+        height: auto;
+    }
+    .header-title {
+        font-size: 40px;
+    }
 }
 
 .nav {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
     padding: 20px 0;
 }
 
-.nav_link {
+.nav-link {
     display: inline-block;
     background-color: aqua;
-    width: 220px;
+    width: 200px;
     margin: 10px;
     padding: 0;
     border: 1px solid royalblue;
+    border-radius: 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
     transition: background .1s linear;
 }
 
-.nav_link:hover {
+.nav-link:hover {
     background-color: rgb(77, 116, 233);
 }
 
 .preview {
     text-align: left;
-    margin: 10px 20px;
+    margin: 0px 20px;
     font-size: 16px;
 }
 
-#vk_poll {
-    display: flex;
-    margin: 10px auto;
+.fb-title {
+    font-family: 'Marck Script', cursive;
+    font-size: 40px;
+    margin: 20px 0;
+}
 
-    width: 50%;
-    max-width: 500px;
+.feedback-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (width <= 800px) {
+    .feedback-container {
+        flex-direction: column;
+        align-content: space-around;
+    }
+}
+
+.feedback {
+    margin: 10px;
+    background-color: rgb(237, 145, 145);
+    border: 2px solid #444242;
+    border-radius: 10px;
+    width: 40%;
+}
+
+@media (width <= 800px) {
+    .feedback {
+        width: 90%;
+    }
+}
+
+.feedback h4 {
+    margin-right: 5px;
+    text-align: end;
+}
+
+.feedback blockquote::before {
+    content: "\201C";
+    font-size: 25px;
+}
+
+.feedback blockquote::after {
+    content: "\201D";
+    font-size: 25px;
 }
