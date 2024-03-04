@@ -1,0 +1,40 @@
+.start {
+    height: 870px;
+    background: rgb(218, 206, 218) url("../museum/img/start-bg.jpg") center no-repeat;
+}
+
+.start-main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    position: relative;
+    left: 5cm;
+    top: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (width <= 770px) {
+    .start-main {
+        left: 20px;
+    }
+}
+
+.start-text {
+    color: rgb(108, 214, 231);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.start-text h2 {
+    margin-bottom: 10px;
+}
+
+.start-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(39, 206, 42);
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}

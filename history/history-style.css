@@ -1,0 +1,32 @@
+.text {
+    display: block;
+    width: 60%;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background: rgb(231, 192, 192);
+}
+
+.text p {
+    margin: 10px 0;
+}
+
+.text p::first-letter {
+    font-size: x-large;
+    color: chocolate;
+}
+
+.back {
+    margin-left: 50px;
+    color: blue;
+    font-size: 50px;
+}
+
+@media (width <= 500px) {
+    .text {
+        width: 75%;
+    }
+    .back {
+        margin-left: 15px;
+        font-size: 35px;
+    }
+}
