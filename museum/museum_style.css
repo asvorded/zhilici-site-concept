@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    width: 100%;
-    
-}
-
-h1 {
+* {
     margin: 0;
 }
 
@@ -16,7 +10,7 @@ a {
 .intro {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
     height: 40px;
     padding: 10px 20px;
     justify-content: space-between;
@@ -32,7 +26,6 @@ a {
 
 .intro-title {
     margin-right: 20px;
-    align-self: center;
     font-family: 'Marck Script', cursive;
 }
 
@@ -63,7 +56,6 @@ a {
 .start {
     height: 870px;
     background: rgb(218, 206, 218) url("../museum/img/start-bg.jpg") center no-repeat;
-    align-content: center;
 }
 
 .start-main {
@@ -86,7 +78,8 @@ a {
 .start-text {
     color: rgb(108, 214, 231);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* margin-right: 40px; */
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .button {
